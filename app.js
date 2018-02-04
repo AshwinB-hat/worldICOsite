@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
 });
 
 
-app.listen(process.env.PORT,(req,res) => {
+app.listen(process.env.PORT || 3000,(req,res) => {
 	console.log("listening on PORT 3000");
 });
 
