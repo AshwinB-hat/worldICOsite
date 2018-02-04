@@ -1,0 +1,87 @@
+
+section{
+	height:600px;
+}
+
+.nav-link{
+	font-weight:bold;
+}
+.topDisplay{
+	
+	background-image: url('decent.jpg');
+	z-index: 0;
+}
+.navbar{
+	background-color: rgba( 255, 255, 255, 1);
+}
+
+#logo{
+	max-height:80px;
+	max-width:80px;
+	margin-left: 30px;
+	
+}
+.ico{
+	margin-top:50%;
+	font-size: 80px;
+	text-align: center;
+	font-family:Impact;
+	
+ 	-webkit-text-fill-color: transparent;
+ 	background: -webkit-linear-gradient(transparent, transparent),
+             url("blue_snow.gif") repeat;
+ 	background: -o-linear-gradient(transparent, transparent);
+ 	-webkit-background-clip: text;
+}
+
+.signup{
+	height:80px;
+	background-color:darkblue;
+	color:white;
+
+}
+
+.signup1{
+	display:inline-block;
+
+
+}
+.signup2{
+	padding: 1% 30%;
+
+}
+input{
+	border-radius: 20px;
+	padding-left: 2%;
+	padding-top:2%;
+
+	
+}
+.button{
+	padding-top:10%;
+}
+.button>a{
+	border-radius: 20px;
+	outline:none;
+	background:white;
+	border: solid 2px blue;
+	color:blue;
+	font-weight: 2px;
+	cursor:pointer;
+	text-align: center;
+
+
+	-webkit-transition-property: width background-color; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
+
+    transition-property: color background-color;
+    transition-duration: 1s;
+    
+}
+
+.button>a:hover{
+	color:white;
+	background-color:blue;
+	text-decoration: none;
+
+}
