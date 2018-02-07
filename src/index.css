@@ -3,16 +3,38 @@ section{
 	height:100%;
 }
 
-.nav-link{
-	font-weight:bold;
+nav{
+	display:flex;
+	flex-wrap:wrap;
+	
 }
+
+
 .topDisplay{
-	height:600px;
+	height:650px;
 	background-image: url('decent.jpg');
 	z-index: 0;
 }
-.navbar{
-	background-color: rgba( 0, 0, 100, 0.3);
+.nav_background{
+	background-color: rgba( 0, 0, 100, 1);
+	/*background-color:rgba( 255, 255, 255, 0.5);*/
+}
+.nav-link{
+	color:white;
+	font-family: Raleway;
+	font-size:30px;
+	
+}
+
+.nav-link:hover{
+	border-bottom:solid 4px blue;
+	color:white;
+	font-size:30px;
+	padding-top:4px;
+	
+}
+.nav-item{
+
 }
 
 #logo{
@@ -30,7 +52,7 @@ section{
 }
 #social>h1{
 	padding-bottom: 2%;
-	font-family: Impact;
+	font-family: Raleway;
 	/*font-weight: bold;*/
 	font-size: 40px;
 	color:white;
@@ -89,59 +111,22 @@ section{
  	-webkit-background-clip: text;
 }
 
-.signup{
-	height:100px;
-	background:linear-gradient(rgb( 0, 0, 200),rgb( 10, 60, 255));
-	color:white;
-
-}
 
 
 
-input{
-	border-radius: 20px;
-	
 
 
-	
-}
-.button{
-	padding-top:10%;
-}
-.button>a{
-	border-radius: 20px;
-	outline:none;
-	background:white;
-	border: solid 2px blue;
-	color:blue;
-	font-weight: 2px;
-	cursor:pointer;
-	text-align: center;
 
-
-	-webkit-transition-property: width background-color; /* Safari */
-    -webkit-transition-duration: 1s; /* Safari */
-
-    transition-property: color background-color;
-    transition-duration: 1s;
-    
-}
-
-.button>a:hover{
-	color:white;
-	background-color:blue;
-	text-decoration: none;
-
-}
 
 .whitepaper{
-	background-color: blue;
+	background:linear-gradient(rgb( 0, 120, 200),rgb( 0, 0, 250));
 	height:200px;
 }
 .whitepaper>h1{
 	text-align:right;
 	margin-right: 5%;
 	color:white;
+	font-family:Raleway;
 }
 
 .whitepaper>div{
@@ -151,18 +136,12 @@ input{
 	margin:0 auto;
 }
 
-.nav-link{
-	color:white;
-}
 
-.fa-file-pdf{
-	float:right;
-
-}
 
 #team{
 	padding-top:7%;
-	background:linear-gradient(rgb( 0, 0, 200),rgb( 10, 60, 255));
+	/*background:linear-gradient(rgb( 0, 0, 200),rgb( 10, 60, 255));*/
+	background:rgb( 0, 0, 80);
 	text-align: center;
 }
 .details>h3,p{
@@ -174,7 +153,11 @@ input{
 	width:130px;
 }
 
+#team{
+	color:white;
+	font-size: 40px;
 
+}
 .team{
 	padding-top: 2%;
 	padding-bottom:3%;
@@ -192,11 +175,7 @@ input{
 }
 
 
-.repl>img{
-	width:50%;
-	height:50%;
-	border-radius: 40%;
-}/*
+/*
 .icon{
 	position:absolute;
 	margin-left: -6%;
@@ -210,15 +189,20 @@ input{
 	
 }*/
 
-img:hover {
+.mem >img:hover {
 	opacity:0.3;
+	border:solid 3px blue;
+	margin:-3px 0;
+}
+.mem>img{
+	border-radius: 50%
 }
 
 
 
 #token{
 	padding-bottom: 7%;
-	padding-top:2%;
+	padding-top:4%;
 	/*background:linear-gradient(rgb( 0, 120, 200),rgb( 0, 0, 250));*/
 	background:rgb( 0, 0, 50);
 	text-align: center;
@@ -250,5 +234,47 @@ img:hover {
 	color:blue;
 	padding-bottom: 30%;
 
+}
+
+
+
+#mail{
+	background: black;
+
+}
+.mail{
+	color:blue;
+	display:flex;
+	justify-content: center;
+	padding: 3%;
+}
+.mail>input{
+	margin-left:2%;
+	border-radius: 20px;
+	z-index:1;
+	border:solid 4px blue;
+	outline:none;
+	text-align: center;
+	color:blue;
+}
+
+.mail>button{
+	border:solid 4px blue;
+	outline:none;
+	margin-left: -10px;
+	z-index:0;
+	width:8%;
+	color:blue;
+	background:white;
+	font-size: 20px;
+	font-weight: bold;
+	/*border-radius: 20px;*/
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: -20px;
+}
+
+.mail>button{
+	cursor:pointer;
 }
 
