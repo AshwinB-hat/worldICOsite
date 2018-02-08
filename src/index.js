@@ -7,10 +7,13 @@
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 400) {
                 $('nav').addClass("nav_background");
+                $('.nav-link').css({"font-size":'25px'});
+                $('#logo').css({"max-height":"50px"});
                 
             } else {
                 $('nav').removeClass("nav_background");
-               
+                $('.nav-link').css({"font-size":'30px'});
+                $('#logo').css({"max-height":"100px"});
             }
         });
 

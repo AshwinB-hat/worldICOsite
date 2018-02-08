@@ -18,13 +18,16 @@ nav{
 .nav_background{
 	background-color: rgba( 0, 0, 100, 1);
 	/*background-color:rgba( 255, 255, 255, 0.5);*/
+	transition: all 0.5s linear;
 }
 .nav-link{
 	color:white;
 	font-family: Raleway;
 	font-size:30px;
+	transition: font-size 0.5s linear;
 	
 }
+
 
 .nav-link:hover{
 	border-bottom:solid 4px blue;
@@ -33,14 +36,13 @@ nav{
 	padding-top:4px;
 	
 }
-.nav-item{
 
-}
 
 #logo{
-	max-height:10	0px;
-	max-width:100px;
+	max-height:100px;
+	max-width:200px;
 	margin-left: 30px;
+	transition: all 0.5s linear;
 }
 
 #social{
@@ -121,6 +123,9 @@ nav{
 .whitepaper{
 	background:linear-gradient(rgb( 0, 120, 200),rgb( 0, 0, 250));
 	height:200px;
+	text-align: center;
+	color:white;
+	
 }
 .whitepaper>h1{
 	text-align:right;
@@ -138,20 +143,23 @@ nav{
 
 
 
+
+
+
 #team{
 	padding-top:7%;
 	/*background:linear-gradient(rgb( 0, 0, 200),rgb( 10, 60, 255));*/
 	background:rgb( 0, 0, 80);
 	text-align: center;
 }
-.details>h3,p{
+/*.details>h3,p{
 	text-align: center;
 	color:white;
 }
 .details>img{
 	height:150px;
 	width:130px;
-}
+}*/
 
 #team{
 	color:white;
@@ -202,7 +210,7 @@ nav{
 
 #token{
 	padding-bottom: 7%;
-	padding-top:4%;
+	padding-top:6%;
 	/*background:linear-gradient(rgb( 0, 120, 200),rgb( 0, 0, 250));*/
 	background:rgb( 0, 0, 50);
 	text-align: center;
@@ -278,3 +286,29 @@ nav{
 	cursor:pointer;
 }
 
+/*.container{
+	background:blue;
+}*/
+
+.design{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+#head{
+	font-family: Raleway;
+	font-size: 80px;
+	color:white;
+}
+.design>p{
+	font-size: 30px;
+	font-family: Raleway;
+	color:white;
+}
+#details{
+	
+	background:linear-gradient(to left,rgb( 100, 100, 255),rgb( 0, 0, 90));
+
+}
