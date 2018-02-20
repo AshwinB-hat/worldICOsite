@@ -1,7 +1,31 @@
+
+
+// document.onreadystatechange = function () {
+//   var state = document.readyState
+//   if (state == 'complete') {
+//       setTimeout(function(){
+//           document.getElementById('interactive');
+//          document.getElementById('load').style.visibility="hidden";
+//       },1000);
+      
+//   }
+// }
+
+
+
 (function($) {          
+    // $(document).onreadystatechange(function(){
+      
+    // });    
+
     $(document).ready(function(){ 
 
-         
+         setTimeout(function(){
+          // document.getElementById('interactive');
+          $('#load').css({"visibility":"hidden"});
+      },2000);
+
+
 
 
         $(window).scroll(function(){                          
@@ -41,6 +65,16 @@
               });
             } // End if
         });
+
+     $(".arrow").on('click',function(event){
+        event.preventDefault();
+        $('html,body').animate({
+          scrollTop: $("#details").offset().top
+        },800,function(){
+          window.location.hash='#details'
+        })
+     });
    });
 })(jQuery);
+
 
